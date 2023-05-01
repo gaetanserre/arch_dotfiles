@@ -99,7 +99,10 @@ def load_config():
             file_dest = file_info["dest"]
             permission = file_info["permission"]
             file = os.path.join("dotfiles", file_name)
-            copy(file, file_dest)
+            success = copy(file, file_dest)
+            if not success:
+                print_red(f"File {file} not found, skipping.")
+                continue
             exec_command(f"chmod -R {permission} {file_dest}")
 
         except Exception as e:
