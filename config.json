@@ -40,8 +40,7 @@
     "$HOME/.zshrc",
     "$HOME/.xinitrc",
     "$HOME/.xmonad",
-    "/etc/default/grub",
-    "/etc/grub.d/40_custom"
+    "/etc/default/grub"
   ],
 
   "commands": [

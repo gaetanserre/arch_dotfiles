@@ -37,34 +37,30 @@
     },
     "xmobar": {
       "dest": "/home/gaetan/.config/xmobar",
-      "permission": 755
+      "permission": 777
     },
     "alacritty": {
       "dest": "/home/gaetan/.config/alacritty",
-      "permission": 755
+      "permission": 777
     },
     ".bash_profile": {
       "dest": "/home/gaetan/.bash_profile",
-      "permission": 755
+      "permission": 777
     },
     ".bashrc": {
       "dest": "/home/gaetan/.bashrc",
-      "permission": 755
+      "permission": 777
     },
     "grub": {
       "dest": "/etc/default/grub",
       "permission": 644
     },
-    "40_custom": {
-      "dest": "/etc/grub.d/40_custom",
-      "permission": 644
-    },
     ".xinitrc": {
       "dest": "/home/gaetan/.xinitrc",
-      "permission": 755
+      "permission": 777
     },
     ".xmonad": {
       "dest": "/home/gaetan/.xmonad",
-      "permission": 755
+      "permission": 777
     }
 }
