@@ -27,7 +27,6 @@
     "/etc/pacman.conf",
     "/etc/locale.conf",
     "/etc/hostname",
-    "/etc/sudoers",
     "/etc/lightdm/lightdm.conf",
     "/etc/lightdm/lightdm-webkit2-greeter.conf",
     "/usr/share/backgrounds",
@@ -51,10 +50,11 @@
   ],
 
   "chroot": [
+    "pacman -Syyu --noconfirm --needed base-devel sudo grub efibootmgr os-prober netctl dhcpcd wpa_supplicant ifplugd",
     "useradd -G wheel -m gaetan",
     "passwd gaetan",
     "passwd",
-    "pacman -Syyu --noconfirm --needed base-devel grub efibootmgr os-prober netctl dhcpcd wpa_supplicant ifplugd",
+    "cp dotfiles/sudoers /etc/sudoers",
     "cp dotfiles/custom-dhcp-profile /etc/netctl/custom-dhcp-profile",
     "netctl enable custom-dhcp-profile",
     "systemctl enable dhcpcd.service",
