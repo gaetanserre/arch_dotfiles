@@ -14,5 +14,6 @@
     ".bashrc": "/home/gaetan/.bashrc",
     "grub": "/etc/default/grub",
     "40_custom": "/etc/grub.d/40_custom",
+    ".xinitrc": "/home/gaetan/.xinitrc",
     ".xmonad": "/home/gaetan/.xmonad"
 }
