@@ -90,6 +90,7 @@ def load_config():
         try:
             file = os.path.join("dotfiles", file_name)
             copy(file, file_dest)
+            exec_command(f"chmod 777 {file_dest}")
 
         except Exception as e:
             print(file)
