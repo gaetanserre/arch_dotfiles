@@ -2,8 +2,7 @@
   "aur_manager": {
     "name": "paru",
     "commands": [
-      "rm -rf paru",
-      "git clone https://aur.archlinux.org/paru.git && cd paru && makepkg -si --noconfirm && cd .. && rm -rf paru"
+      
     ]
   },
 
@@ -29,7 +28,7 @@
     "mimeo",
     "sxiv",
     "mugshot",
-    "tf-meslo-nerd-font-powerlevel10k",
+    "ttf-meslo-nerd-font-powerlevel10k",
     "lazygit",
     "pulseaudio",
     "pulsemixer",
@@ -41,7 +40,7 @@
     "git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions",
     "git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting",
     "git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k",
-    "sh -c '$(curl -fsSL \"https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)\"",
+    "sh -c $(curl -fsSL \"https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)\"",
     "pulseaudio -D"
   ],
 
