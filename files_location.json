@@ -37,19 +37,19 @@
     },
     "xmobar": {
       "dest": "/home/gaetan/.config/xmobar",
-      "permission": 777
+      "permission": 755
     },
     "alacritty": {
       "dest": "/home/gaetan/.config/alacritty",
-      "permission": 777
+      "permission": 755
     },
     ".bash_profile": {
       "dest": "/home/gaetan/.bash_profile",
-      "permission": 777
+      "permission": 755
     },
     ".bashrc": {
       "dest": "/home/gaetan/.bashrc",
-      "permission": 777
+      "permission": 755
     },
     "grub": {
       "dest": "/etc/default/grub",
@@ -61,10 +61,10 @@
     },
     ".xinitrc": {
       "dest": "/home/gaetan/.xinitrc",
-      "permission": 777
+      "permission": 755
     },
     ".xmonad": {
       "dest": "/home/gaetan/.xmonad",
-      "permission": 777
+      "permission": 755
     }
 }

@@ -190,7 +190,7 @@ mySpacing = spacingRaw False            -- False=Apply even when single window
                        (Border 5 5 5 5) -- Window border size
                        True             -- Enable window borders
 
-myLayout = myLayout = mySpacing $ avoidStruts tiled ||| Mirror tiled ||| Full
+myLayout = mySpacing $ avoidStruts tiled ||| Mirror tiled ||| Full
   where
      -- default tiling algorithm partitions the screen into two panes
      tiled   = Tall nmaster delta ratio

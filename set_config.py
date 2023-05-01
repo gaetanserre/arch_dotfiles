@@ -92,7 +92,7 @@ def load_config():
             permission = file_info["permission"]
             file = os.path.join("dotfiles", file_name)
             copy(file, file_dest)
-            exec_command(f"chmod {permission} {file_dest}")
+            exec_command(f"chmod -R {permission} {file_dest}")
 
         except Exception as e:
             print(file)
@@ -139,7 +139,7 @@ def save_config(home_dir):
     # save files absolute path for loading and give permissions
     location = open("files_location.json", "w")
     location.write(json.dumps(files_location, indent=4))
-    exec_command("chmod 777 dotfiles files_location.json")
+    exec_command("chmod -R 755 dotfiles files_location.json")
 
 
 if __name__ == "__main__":
