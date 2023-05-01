@@ -33,7 +33,7 @@
     },
     "backgrounds": {
       "dest": "/usr/share/backgrounds",
-      "permission": 644
+      "permission": 777
     },
     "xmobar": {
       "dest": "/home/gaetan/.config/xmobar",
