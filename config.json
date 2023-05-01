@@ -70,7 +70,6 @@
   ],
 
   "commands": [
-    "chsh -s $(which zsh)",
     "timedatectl set-local-rtc 1 --adjust-system-clock",
     "ln -sf /usr/share/zoneinfo/Europe/Paris /etc/localtime",
     "hwclock --systohc",
