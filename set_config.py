@@ -136,7 +136,7 @@ def save_config(home_dir):
 
             file_name = file.split("/")[-1]
             files_location[file_name] = {
-                "dest": "file",
+                "dest": file,
                 "permission": oct(os.stat(file).st_mode)[-3:],
             }
 

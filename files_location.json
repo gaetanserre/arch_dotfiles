@@ -1,82 +1,86 @@
 {
     "locale.gen": {
-        "dest": "file",
+        "dest": "/etc/locale.gen",
         "permission": "644"
     },
     "pacman.conf": {
-        "dest": "file",
+        "dest": "/etc/pacman.conf",
         "permission": "644"
     },
     "locale.conf": {
-        "dest": "file",
+        "dest": "/etc/locale.conf",
         "permission": "644"
     },
     "hostname": {
-        "dest": "file",
+        "dest": "/etc/hostname",
         "permission": "644"
     },
     "lightdm.conf": {
-        "dest": "file",
+        "dest": "/etc/lightdm/lightdm.conf",
         "permission": "644"
     },
     "lightdm-webkit2-greeter.conf": {
-        "dest": "file",
+        "dest": "/etc/lightdm/lightdm-webkit2-greeter.conf",
         "permission": "644"
     },
     "backgrounds": {
-        "dest": "file",
+        "dest": "/usr/share/backgrounds",
         "permission": "755"
     },
     "grub": {
-        "dest": "file",
+        "dest": "/etc/default/grub",
         "permission": "644"
     },
+    "40_custom": {
+      "dest": "/etc/grub.d/40_custom",
+      "permission": "600"
+    },
     "daemon.conf": {
-        "dest": "file",
+        "dest": "/etc/pulse/daemon.conf",
         "permission": "644"
     },
     "xmobar": {
-        "dest": "file",
+        "dest": "$HOME/.config/xmobar",
         "permission": "755"
     },
     "alacritty": {
-        "dest": "file",
+        "dest": "$HOME/.config/alacritty",
         "permission": "755"
     },
     ".xinitrc": {
-        "dest": "file",
+        "dest": "$HOME/.xinitrc",
         "permission": "755"
     },
     ".xmonad": {
-        "dest": "file",
+        "dest": "$HOME/.xmonad",
         "permission": "755"
     },
     ".face": {
-        "dest": "file",
+        "dest": "$HOME/.face",
         "permission": "644"
     },
     ".bash_profile": {
-        "dest": "file",
+        "dest": "$HOME/.bash_profile",
         "permission": "755"
     },
     ".bashrc": {
-        "dest": "file",
+        "dest": "$HOME/.bashrc",
         "permission": "755"
     },
     ".zshrc": {
-        "dest": "file",
+        "dest": "$HOME/.zshrc",
         "permission": "644"
     },
     ".gitconfig": {
-        "dest": "file",
+        "dest": "$HOME/.gitconfig",
         "permission": "644"
     },
     ".p10k.zsh": {
-        "dest": "file",
+        "dest": "$HOME/.p10k.zsh",
         "permission": "644"
     },
     ".zsh_history": {
-        "dest": "file",
+        "dest": "$HOME/.zsh_history",
         "permission": "600"
     }
 }
