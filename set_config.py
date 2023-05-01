@@ -84,6 +84,10 @@ def install_packages():
     for package in json_config["packages"]:
         install_package(package, json_config["aur_manager"]["name"])
 
+    # execute packages related commands
+    for command in json_config["packages_commands"]:
+        exec_command(command)
+
 
 def load_config():
     json_config = json.loads(open("config.json", "r").read())
