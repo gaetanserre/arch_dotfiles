@@ -2,15 +2,43 @@
   "aur_manager": {
     "name": "paru",
     "commands": [
-      
+      "rm -rf paru",
+      "git clone https://aur.archlinux.org/paru.git && cd paru && makepkg -si --noconfirm && cd .. && rm -rf paru"
     ]
   },
 
   "packages": [
-
+    "nano",
+    "neofetch",
+    "xorg-server", 
+    "xorg-xinit",
+    "xmonad",
+    "xmonad-contrib",
+    "xterm",
+    "xmobar",
+    "picom",
+    "alacritty",
+    "feh",
+    "lightdm-webkit2-theme-glorious",
+    "visual-studio-code-bin",
+    "nautilus",
+    "apple-fonts",
+    "ttf-menlo-powerline-git",
+    "firefox",
+    "evince",
+    "mimeo",
+    "sxiv",
+    "mugshot",
+    "ttf-meslo-nerd-font-powerlevel10k",
+    "lazygit",
+    "pulseaudio",
+    "pulsemixer",
+    "dmenu",
+    "zsh"
   ],
 
   "pkg_commands": [
+    "sh -c \"$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)\"",
     "git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions",
     "git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting",
     "git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k",
