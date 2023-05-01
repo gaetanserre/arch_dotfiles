@@ -46,7 +46,8 @@
     "ln -sf /usr/share/zoneinfo/Europe/Paris /etc/localtime",
     "hwclock --systohc",
     "locale-gen",
-    "systemctl enable lightdm"
+    "systemctl enable lightdm",
+    "grub-mkconfig -o /boot/grub/grub.cfg"
   ],
 
   "chroot": [
@@ -57,7 +58,6 @@
     "cp dotfiles/custom-dhcp-profile /etc/netctl/custom-dhcp-profile",
     "netctl enable custom-dhcp-profile",
     "systemctl enable dhcpcd.service",
-    "mkdir /efi",
     "grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB",
     "grub-mkconfig -o /boot/grub/grub.cfg"
   ]
