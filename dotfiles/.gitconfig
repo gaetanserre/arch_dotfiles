@@ -1,0 +1,5 @@
+[user]
+        name = Gaëtan Serré
+        email = gaetan.serre@ens-paris-saclay.fr
+[pull]
+        rebase = true

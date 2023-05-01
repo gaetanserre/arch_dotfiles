@@ -15,6 +15,7 @@
     "xmonad",
     "xmonad-contrib",
     "xterm",
+    "xmobar",
     "picom",
     "alacritty",
     "feh",
@@ -22,7 +23,12 @@
     "visual-studio-code-bin",
     "nautilus",
     "apple-fonts",
-    "ttf-menlo-powerline-git"
+    "ttf-menlo-powerline-git",
+    "firefox",
+    "evince",
+    "mimeo",
+    "sxiv",
+    "mugshot"
   ],
 
   "files":[
