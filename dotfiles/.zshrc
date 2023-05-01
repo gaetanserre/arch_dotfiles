@@ -132,8 +132,6 @@ alias torrent="transmission-cli -er"
 
 export PATH=/home/gaetan/.local/bin:$PATH
 
-export DISPLAY=:1
-
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/Users/gaetanserre/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"

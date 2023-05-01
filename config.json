@@ -28,7 +28,12 @@
     "evince",
     "mimeo",
     "sxiv",
-    "mugshot"
+    "mugshot",
+    "tf-meslo-nerd-font-powerlevel10k",
+    "lazygit",
+    "pulseaudio",
+    "paman",
+    "dmenu"
   ],
 
   "pkg_commands": [
@@ -45,14 +50,19 @@
     "/etc/lightdm/lightdm.conf",
     "/etc/lightdm/lightdm-webkit2-greeter.conf",
     "/usr/share/backgrounds",
+    "/etc/default/grub",
+    "/etc/pulse/daemon.conf",
     "$HOME/.config/xmobar",
     "$HOME/.config/alacritty",
+    "$HOME/.xinitrc",
+    "$HOME/.xmonad",
+    "$HOME/.face",
     "$HOME/.bash_profile",
     "$HOME/.bashrc",
     "$HOME/.zshrc",
-    "$HOME/.xinitrc",
-    "$HOME/.xmonad",
-    "/etc/default/grub"
+    "$HOME/.gitconfig",
+    "$HOME/.p10k.zsh",
+    "$HOME/.zsh_history"
   ],
 
   "commands": [
