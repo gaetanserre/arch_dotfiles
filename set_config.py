@@ -41,6 +41,19 @@ def print_green(text):
     print(f"\033[92m{text}\033[00m")
 
 
+def copy(src, dest):
+    print_green(f"+ cp {src} -> {dest}")
+    if os.path.isfile(src):
+        shutil.copy(src, dest)
+    elif os.path.isdir(src):
+        if os.path.isdir(dest):
+            shutil.rmtree(dest)
+        shutil.copytree(src, dest, copy_function=shutil.copy)
+    else:
+        return False
+    return True
+
+
 def exec_command(command):
     print_green(f"+ {command}")
     os.system(command)
@@ -76,13 +89,7 @@ def load_config():
     for file_name, file_dest in files_dest.items():
         try:
             file = os.path.join("dotfiles", file_name)
-
-            if os.path.isfile(file):
-                shutil.copy(file, file_dest)
-            elif os.path.isdir(file):
-                if os.path.isdir(file_dest):
-                    shutil.rmtree(file_dest)
-                shutil.copytree(file, file_dest, copy_function=shutil.copy)
+            copy(file, file_dest)
 
         except Exception as e:
             print(file)
@@ -108,12 +115,11 @@ def save_config(home_dir):
         try:
             file = os.path.join(home_dir, file.replace("$HOME/", ""))
 
-            if os.path.isfile(file):
-                shutil.copy(file, "dotfiles/")
-            elif os.path.isdir(file):
-                dir_name = file.split("/")[-1]
-                shutil.copytree(file, f"dotfiles/{dir_name}", copy_function=shutil.copy)
-            else:
+            dir_name = file.split("/")[-1]
+            success = copy(
+                file, f"dotfiles/{dir_name}" if os.path.isdir(file) else "dotfiles/"
+            )
+            if not success:
                 print_red(f"File {file} not found, skipping.")
                 continue
 
