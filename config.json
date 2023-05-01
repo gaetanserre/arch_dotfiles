@@ -34,7 +34,8 @@
     "pulseaudio",
     "pulsemixer",
     "dmenu",
-    "zsh"
+    "zsh",
+    "bat"
   ],
 
   "pkg_commands": [
