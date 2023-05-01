@@ -13,5 +13,6 @@
     ".bash_profile": "/home/gaetan/.bash_profile",
     ".bashrc": "/home/gaetan/.bashrc",
     "grub": "/etc/default/grub",
-    "40_custom": "/etc/grub.d/40_custom"
+    "40_custom": "/etc/grub.d/40_custom",
+    ".xmonad": "/home/gaetan/.xmonad"
 }

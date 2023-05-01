@@ -39,6 +39,7 @@
     "$HOME/.bashrc",
     "$HOME/.zshrc",
     "$HOME/.xinitrc",
+    "$HOME/.xmonad",
     "/etc/default/grub",
     "/etc/grub.d/40_custom"
   ],
