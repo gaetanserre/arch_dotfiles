@@ -139,7 +139,7 @@ if __name__ == "__main__":
         chroot()
     elif args.packages:
         install_packages()
-    if args.load:
+    elif args.load:
         load_config()
     else:
         raise ValueError("Please specify an action.")
