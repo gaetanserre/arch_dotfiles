@@ -40,47 +40,47 @@
         "permission": "644"
     },
     "xmobar": {
-        "dest": "$HOME/.config/xmobar",
+        "dest": "/home/gaetan/.config/xmobar",
         "permission": "755"
     },
     "alacritty": {
-        "dest": "$HOME/.config/alacritty",
+        "dest": "/home/gaetan/.config/alacritty",
         "permission": "755"
     },
     ".xinitrc": {
-        "dest": "$HOME/.xinitrc",
+        "dest": "/home/gaetan/.xinitrc",
         "permission": "755"
     },
     ".xmonad": {
-        "dest": "$HOME/.xmonad",
+        "dest": "/home/gaetan/.xmonad",
         "permission": "755"
     },
     ".face": {
-        "dest": "$HOME/.face",
+        "dest": "/home/gaetan/.face",
         "permission": "644"
     },
     ".bash_profile": {
-        "dest": "$HOME/.bash_profile",
+        "dest": "/home/gaetan/.bash_profile",
         "permission": "755"
     },
     ".bashrc": {
-        "dest": "$HOME/.bashrc",
+        "dest": "/home/gaetan/.bashrc",
         "permission": "755"
     },
     ".zshrc": {
-        "dest": "$HOME/.zshrc",
+        "dest": "/home/gaetan/.zshrc",
         "permission": "644"
     },
     ".gitconfig": {
-        "dest": "$HOME/.gitconfig",
+        "dest": "/home/gaetan/.gitconfig",
         "permission": "644"
     },
     ".p10k.zsh": {
-        "dest": "$HOME/.p10k.zsh",
+        "dest": "/home/gaetan/.p10k.zsh",
         "permission": "644"
     },
     ".zsh_history": {
-        "dest": "$HOME/.zsh_history",
+        "dest": "/home/gaetan/.zsh_history",
         "permission": "600"
     }
 }
