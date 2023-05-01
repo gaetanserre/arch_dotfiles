@@ -10,11 +10,14 @@
   "packages": [
     "nano",
     "neofetch",
+    "xorg-server", 
+    "xorg-xinit",
     "xmonad",
     "xmonad-contrib",
     "xterm",
     "picom",
     "alacritty",
+    "feh",
     "lightdm-webkit2-theme-glorious",
     "visual-studio-code-bin",
     "nautilus",
@@ -35,6 +38,7 @@
     "$HOME/.bash_profile",
     "$HOME/.bashrc",
     "$HOME/.zshrc",
+    "$HOME/.xinitrc",
     "/etc/default/grub",
     "/etc/grub.d/40_custom"
   ],
@@ -46,7 +50,8 @@
     "hwclock --systohc",
     "locale-gen",
     "systemctl enable lightdm",
-    "grub-mkconfig -o /boot/grub/grub.cfg"
+    "grub-mkconfig -o /boot/grub/grub.cfg",
+    "feh --bg-fill /usr/share/backgrounds/gnome/field-d.svg"
   ],
 
   "chroot": [
