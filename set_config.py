@@ -85,7 +85,7 @@ def install_packages():
         install_package(package, json_config["aur_manager"]["name"])
 
     # execute packages related commands
-    for command in json_config["packages_commands"]:
+    for command in json_config["pkg_commands"]:
         exec_command(command)
 
 
