@@ -1,78 +1,82 @@
 {
     "locale.gen": {
-      "dest": "/etc/locale.gen",
-      "permission": 644
+        "dest": "file",
+        "permission": "644"
     },
     "pacman.conf": {
-      "dest": "/etc/pacman.conf",
-      "permission": 644
+        "dest": "file",
+        "permission": "644"
     },
     "locale.conf": {
-      "dest": "/etc/locale.conf",
-      "permission": 644
+        "dest": "file",
+        "permission": "644"
     },
     "hostname": {
-      "dest": "/etc/hostname",
-      "permission": 644
-    },
-    "sudoers": {
-      "dest": "/etc/sudoers",
-      "permission": 644
-    },
-    "custom-dhcp-profile": {
-      "dest": "/etc/netctl/custom-dhcp-profile",
-      "permission": 644
+        "dest": "file",
+        "permission": "644"
     },
     "lightdm.conf": {
-      "dest": "/etc/lightdm/lightdm.conf",
-      "permission": 644
+        "dest": "file",
+        "permission": "644"
     },
     "lightdm-webkit2-greeter.conf": {
-      "dest": "/etc/lightdm/lightdm-webkit2-greeter.conf",
-      "permission": 644
+        "dest": "file",
+        "permission": "644"
     },
     "backgrounds": {
-      "dest": "/usr/share/backgrounds",
-      "permission": 777
-    },
-    "xmobar": {
-      "dest": "/home/gaetan/.config/xmobar",
-      "permission": 777
-    },
-    "alacritty": {
-      "dest": "/home/gaetan/.config/alacritty",
-      "permission": 777
-    },
-    ".bash_profile": {
-      "dest": "/home/gaetan/.bash_profile",
-      "permission": 777
-    },
-    ".bashrc": {
-      "dest": "/home/gaetan/.bashrc",
-      "permission": 777
+        "dest": "file",
+        "permission": "755"
     },
     "grub": {
-      "dest": "/etc/default/grub",
-      "permission": 644
+        "dest": "file",
+        "permission": "644"
+    },
+    "daemon.conf": {
+        "dest": "file",
+        "permission": "644"
+    },
+    "xmobar": {
+        "dest": "file",
+        "permission": "755"
+    },
+    "alacritty": {
+        "dest": "file",
+        "permission": "755"
     },
     ".xinitrc": {
-      "dest": "/home/gaetan/.xinitrc",
-      "permission": 777
+        "dest": "file",
+        "permission": "755"
     },
     ".xmonad": {
-      "dest": "/home/gaetan/.xmonad",
-      "permission": 777
+        "dest": "file",
+        "permission": "755"
     },
-    ".p10k.zsh": {
-      "dest": "/home/gaetan/.p10k.zsh",
-      "permission": 777
+    ".face": {
+        "dest": "file",
+        "permission": "644"
+    },
+    ".bash_profile": {
+        "dest": "file",
+        "permission": "755"
+    },
+    ".bashrc": {
+        "dest": "file",
+        "permission": "755"
     },
     ".zshrc": {
-      "dest": "/home/gaetan/.zshrc",
-      "permission": 777
+        "dest": "file",
+        "permission": "644"
     },
     ".gitconfig": {
-      "dest": "/home/gaetan/.gitconfig",
-      "permission": 777
+        "dest": "file",
+        "permission": "644"
+    },
+    ".p10k.zsh": {
+        "dest": "file",
+        "permission": "644"
+    },
+    ".zsh_history": {
+        "dest": "file",
+        "permission": "600"
     }
 }
