@@ -1,3 +1,7 @@
+#
+# Created in 2023 by Gaëtan Serré
+#
+
 import os
 import shutil
 import argparse
