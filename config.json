@@ -1,0 +1,62 @@
+{
+  "aur_manager": {
+    "name": "paru",
+    "commands": [
+      "rm -rf paru",
+      "git clone https://aur.archlinux.org/paru.git && cd paru && makepkg -si --noconfirm && cd .. && rm -rf paru"
+    ]
+  },
+
+  "packages": [
+    "nano",
+    "netctl",
+    "dhcpcd",
+    "wpa_supplicant",
+    "ifplugd",
+    "neofetch",
+    "xmonad",
+    "xmonad-contrib",
+    "xterm",
+    "picom",
+    "alacritty",
+    "lightdm-webkit2-theme-glorious",
+    "grub",
+    "efibootmgr",
+    "os-prober",
+    "visual-studio-code-bin",
+    "nautilus",
+    "apple-fonts",
+    "ttf-menlo-powerline-git"
+  ],
+
+  "files":[
+    "/etc/locale.gen",
+    "/etc/pacman.conf",
+    "/etc/locale.conf",
+    "/etc/hostname",
+    "/etc/sudoers",
+    "/etc/netctl/custom-dhcp-profile",
+    "/etc/lightdm/lightdm.conf",
+    "/etc/lightdm/lightdm-webkit2-greeter.conf",
+    "/usr/share/backgrounds",
+    "$HOME/.config/xmobar",
+    "$HOME/.config/alacritty",
+    "$HOME/.bash_profile",
+    "$HOME/.bashrc",
+    "$HOME/.zshrc",
+    "/etc/default/grub",
+    "/etc/grub.d/40_custom"
+  ],
+
+  "commands": [
+    "loadkeys us-acentos",
+    "timedatectl set-local-rtc 1 --adjust-system-clock",
+    "ln -sf /usr/share/zoneinfo/Europe/Paris /etc/localtime",
+    "hwclock --systohc",
+    "locale-gen",
+    "grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB",
+    "grub-mkconfig -o /boot/grub/grub.cfg",
+    "systemctl enable lightdm",
+    "systemctl enable dhcpcd"
+  ]
+}

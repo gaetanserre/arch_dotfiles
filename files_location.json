@@ -1,0 +1,17 @@
+{
+    "locale.gen": "/etc/locale.gen",
+    "pacman.conf": "/etc/pacman.conf",
+    "locale.conf": "/etc/locale.conf",
+    "hostname": "/etc/hostname",
+    "sudoers": "/etc/sudoers",
+    "custom-dhcp-profile": "/etc/netctl/custom-dhcp-profile",
+    "lightdm.conf": "/etc/lightdm/lightdm.conf",
+    "lightdm-webkit2-greeter.conf": "/etc/lightdm/lightdm-webkit2-greeter.conf",
+    "backgrounds": "/usr/share/backgrounds",
+    "xmobar": "/home/gaetan/.config/xmobar",
+    "alacritty": "/home/gaetan/.config/alacritty",
+    ".bash_profile": "/home/gaetan/.bash_profile",
+    ".bashrc": "/home/gaetan/.bashrc",
+    "grub": "/etc/default/grub",
+    "40_custom": "/etc/grub.d/40_custom"
+}
