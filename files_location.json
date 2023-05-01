@@ -31,10 +31,6 @@
         "dest": "/etc/default/grub",
         "permission": "644"
     },
-    "40_custom": {
-      "dest": "/etc/grub.d/40_custom",
-      "permission": "600"
-    },
     "daemon.conf": {
         "dest": "/etc/pulse/daemon.conf",
         "permission": "644"

@@ -53,7 +53,6 @@
     "/etc/lightdm/lightdm-webkit2-greeter.conf",
     "/usr/share/backgrounds",
     "/etc/default/grub",
-    "/etc/grub.d/40_custom",
     "/etc/pulse/daemon.conf",
     "$HOME/.config/xmobar",
     "$HOME/.config/alacritty",
