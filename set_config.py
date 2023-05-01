@@ -13,7 +13,9 @@ def cli():
     parser.add_argument(
         "-s", "--save", action="store_true", default=False, help="save config files."
     )
-    parser.add_argument("-hd", "--home-dir", required=True, help="home directory")
+    parser.add_argument(
+        "-hd", "--home-dir", default="/home/gaetan", help="home directory"
+    )
 
     parser.add_argument(
         "-ch",
