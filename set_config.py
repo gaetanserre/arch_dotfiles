@@ -85,12 +85,14 @@ def load_config():
     json_config = json.loads(open("config.json", "r").read())
 
     # copy config files
-    files_dest = json.loads(open("files_location.json", "r").read())
-    for file_name, file_dest in files_dest.items():
+    files_info = json.loads(open("files_location.json", "r").read())
+    for file_name, file_info in files_info.items():
         try:
+            file_dest = file_info["dest"]
+            permission = file_info["permission"]
             file = os.path.join("dotfiles", file_name)
             copy(file, file_dest)
-            exec_command(f"chmod 777 {file_dest}")
+            exec_command(f"chmod {permission} {file_dest}")
 
         except Exception as e:
             print(file)
@@ -125,7 +127,10 @@ def save_config(home_dir):
                 continue
 
             file_name = file.split("/")[-1]
-            files_location[file_name] = file
+            files_location[file_name] = {
+                "dest": "file",
+                "permission": oct(os.stat(file).st_mode)[-3:],
+            }
 
         except Exception as e:
             print(file)
