@@ -9,10 +9,6 @@
 
   "packages": [
     "nano",
-    "netctl",
-    "dhcpcd",
-    "wpa_supplicant",
-    "ifplugd",
     "neofetch",
     "xmonad",
     "xmonad-contrib",
@@ -20,9 +16,6 @@
     "picom",
     "alacritty",
     "lightdm-webkit2-theme-glorious",
-    "grub",
-    "efibootmgr",
-    "os-prober",
     "visual-studio-code-bin",
     "nautilus",
     "apple-fonts",
@@ -35,7 +28,6 @@
     "/etc/locale.conf",
     "/etc/hostname",
     "/etc/sudoers",
-    "/etc/netctl/custom-dhcp-profile",
     "/etc/lightdm/lightdm.conf",
     "/etc/lightdm/lightdm-webkit2-greeter.conf",
     "/usr/share/backgrounds",
@@ -54,9 +46,19 @@
     "ln -sf /usr/share/zoneinfo/Europe/Paris /etc/localtime",
     "hwclock --systohc",
     "locale-gen",
+    "systemctl enable lightdm"
+  ],
+
+  "chroot": [
+    "useradd -G wheel -m gaetan",
+    "passwd gaetan",
+    "passwd",
+    "pacman -Syyu --noconfirm --needed base-devel grub efibootmgr os-prober netctl dhcpcd wpa_supplicant ifplugd",
+    "cp dotfiles/custom-dhcp-profile /etc/netctl/custom-dhcp-profile",
+    "netctl enable custom-dhcp-profile",
+    "systemctl enable dhcpcd.service",
+    "mkdir /efi",
     "grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB",
-    "grub-mkconfig -o /boot/grub/grub.cfg",
-    "systemctl enable lightdm",
-    "systemctl enable dhcpcd"
+    "grub-mkconfig -o /boot/grub/grub.cfg"
   ]
 }

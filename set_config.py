@@ -7,18 +7,25 @@ import json
 def cli():
     parser = argparse.ArgumentParser(description="Set config file")
     parser.add_argument(
-        "-l", "--load", action="store_true", default=False, help="save config files."
+        "-s", "--save", action="store_true", default=False, help="save config files."
     )
     parser.add_argument(
         "-hd", "--home-dir", default="/home/gaetan", help="home directory"
     )
 
     parser.add_argument(
+        "-ch",
+        "--chroot",
+        action="store_true",
+        default=False,
+        help="Execute chroot commands.",
+    )
+    parser.add_argument(
         "-p", "--packages", action="store_true", default=False, help="install packages."
     )
     parser.add_argument(
-        "-c",
-        "--config",
+        "-l",
+        "--load",
         action="store_true",
         default=False,
         help="load config files and commands.",
@@ -41,6 +48,12 @@ def exec_command(command):
 
 def install_package(package, aur_manager):
     exec_command(f"{aur_manager} -S --noconfirm {package}")
+
+
+def chroot():
+    json_config = json.loads(open("config.json", "r").read())
+    for command in json_config["chroot"]:
+        exec_command(command)
 
 
 def install_packages():
@@ -120,11 +133,13 @@ def save_config(home_dir):
 if __name__ == "__main__":
     args = cli()
 
-    if args.load:
-        load_config()
+    if args.save:
+        save_config(args.home_dir)
+    elif args.chroot:
+        chroot()
     elif args.packages:
         install_packages()
-    elif args.config:
-        save_config(args.home_dir)
+    if args.load:
+        load_config()
     else:
         raise ValueError("Please specify an action.")
