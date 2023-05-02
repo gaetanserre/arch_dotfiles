@@ -39,11 +39,6 @@
         "owner": "root",
         "group": "root"
     },
-    "nouveau.conf": {
-        "dest": "/etc/modprobe.d/nouveau.conf",
-        "owner": "root",
-        "group": "root"
-    },
     "backgrounds": {
         "dest": "/usr/share/backgrounds",
         "owner": "gaetan",
