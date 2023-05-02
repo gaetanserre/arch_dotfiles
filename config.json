@@ -78,7 +78,12 @@
   ],
 
   "commands": [
-
+    "timedatectl set-local-rtc 1 --adjust-system-clock",
+    "ln -sf /usr/share/zoneinfo/Europe/Paris /etc/localtime",
+    "hwclock --systohc",
+    "locale-gen",
+    "systemctl enable lightdm",
+    "grub-mkconfig -o /boot/grub/grub.cfg"
   ],
 
   "chroot": [
