@@ -6,6 +6,7 @@ import os
 import shutil
 import argparse
 import json
+from pathlib import Path
 
 
 def cli():
@@ -14,7 +15,7 @@ def cli():
         "-s", "--save", action="store_true", default=False, help="save config files."
     )
     parser.add_argument(
-        "-hd", "--home-dir", default="/home/gaetan", help="home directory"
+        "-hd", "--home-dir", default="/home/gaetan", help="home directory."
     )
 
     parser.add_argument(
@@ -96,14 +97,16 @@ def load_config():
     files_info = json.loads(open("files_location.json", "r").read())
     for file_name, file_info in files_info.items():
         try:
-            file_dest = file_info["dest"]
-            permission = file_info["permission"]
+            file_dest  = file_info["dest"]
+            file_owner = file_info["owner"]
+            file_group = file_info["group"]
+
             file = os.path.join("dotfiles", file_name)
             success = copy(file, file_dest)
             if not success:
                 print_red(f"File {file} not found, skipping.")
                 continue
-            exec_command(f"chmod -R {permission} {file_dest}")
+            exec_command(f"chown -R {file_owner}:{file_group} {file_dest}")
 
         except Exception as e:
             print(file)
@@ -113,6 +116,10 @@ def load_config():
     for command in json_config["commands"]:
         exec_command(command)
 
+
+def get_group_owner(path):
+    file = Path(path)
+    return file.owner(), file.group()
 
 def save_config(home_dir):
     # create folder to save config files
@@ -137,10 +144,12 @@ def save_config(home_dir):
                 print_red(f"File {file} not found, skipping.")
                 continue
 
+            owner, group = get_group_owner(file)
             file_name = file.split("/")[-1]
             files_location[file_name] = {
                 "dest": file,
-                "permission": oct(os.stat(file).st_mode)[-3:],
+                "owner": owner,
+                "group": group
             }
 
         except Exception as e:
@@ -150,7 +159,6 @@ def save_config(home_dir):
     # save files absolute path for loading and give permissions
     location = open("files_location.json", "w")
     location.write(json.dumps(files_location, indent=4))
-    exec_command("chmod -R 755 dotfiles files_location.json")
 
 
 if __name__ == "__main__":
