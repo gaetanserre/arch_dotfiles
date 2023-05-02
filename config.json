@@ -9,7 +9,6 @@
 
   "packages": [
     "nvidia",
-    "nano",
     "neofetch",
     "xorg-server", 
     "xorg-xinit",
@@ -83,7 +82,7 @@
   ],
 
   "chroot": [
-    "pacman -Syyu --noconfirm --needed base-devel sudo grub efibootmgr os-prober netctl dhcpcd wpa_supplicant ifplugd",
+    "pacman -Syyu --noconfirm --needed base-devel sudo grub efibootmgr os-prober netctl dhcpcd wpa_supplicant ifplugd nano",
     "useradd -G wheel -m gaetan",
     "passwd gaetan",
     "passwd",
