@@ -9,6 +9,7 @@
 
   "packages": [
     "nvidia",
+    "xrandr",
     "neofetch",
     "xorg-server", 
     "xorg-xinit",
