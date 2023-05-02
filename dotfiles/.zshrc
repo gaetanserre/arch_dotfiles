@@ -126,9 +126,6 @@ alias ca="conda activate"
 alias tc="typo_checker"
 alias aes="$HOME/miniconda3/envs/AES/bin/python $HOME/Documents/Projects/AES_256-Python/src/AES.py"
 alias nvi="nvitop -m full"
-alias c_report="cp -r $HOME/Documents/Latex-templates/Report ."
-alias c_poster="cp -r $HOME/Documents/Latex-templates/Poster ."
-alias torrent="transmission-cli -er"
 
 export PATH=/home/gaetan/.local/bin:$PATH
 
