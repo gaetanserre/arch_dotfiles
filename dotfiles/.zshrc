@@ -1,3 +1,6 @@
+neofetch
+setxkbmap -layout us -variant intl
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -126,23 +129,21 @@ alias ca="conda activate"
 alias tc="typo_checker"
 alias aes="$HOME/miniconda3/envs/AES/bin/python $HOME/Documents/Projects/AES_256-Python/src/AES.py"
 alias nvi="nvitop -m full"
+alias sn="shutdown now"
 
 export PATH=/home/gaetan/.local/bin:$PATH
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/gaetanserre/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/gaetan/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/Users/gaetanserre/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/gaetanserre/miniconda3/etc/profile.d/conda.sh"
+    if [ -f "/home/gaetan/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/gaetan/miniconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/Users/gaetanserre/miniconda3/bin:$PATH"
+        export PATH="/home/gaetan/miniconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
-neofetch
-setxkbmap -layout us -variant intl

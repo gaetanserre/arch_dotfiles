@@ -1,82 +1,112 @@
 {
     "locale.gen": {
         "dest": "/etc/locale.gen",
-        "permission": "644"
+        "owner": "root",
+        "group": "root"
     },
     "pacman.conf": {
         "dest": "/etc/pacman.conf",
-        "permission": "644"
+        "owner": "root",
+        "group": "root"
     },
     "locale.conf": {
         "dest": "/etc/locale.conf",
-        "permission": "644"
+        "owner": "root",
+        "group": "root"
     },
     "hostname": {
         "dest": "/etc/hostname",
-        "permission": "644"
+        "owner": "root",
+        "group": "root"
     },
     "lightdm.conf": {
         "dest": "/etc/lightdm/lightdm.conf",
-        "permission": "644"
+        "owner": "root",
+        "group": "root"
     },
     "lightdm-webkit2-greeter.conf": {
         "dest": "/etc/lightdm/lightdm-webkit2-greeter.conf",
-        "permission": "644"
-    },
-    "backgrounds": {
-        "dest": "/usr/share/backgrounds",
-        "permission": "755"
+        "owner": "root",
+        "group": "root"
     },
     "grub": {
         "dest": "/etc/default/grub",
-        "permission": "644"
+        "owner": "root",
+        "group": "root"
     },
     "daemon.conf": {
         "dest": "/etc/pulse/daemon.conf",
-        "permission": "644"
+        "owner": "root",
+        "group": "root"
+    },
+    "nouveau.conf": {
+        "dest": "/etc/modprobe.d/nouveau.conf",
+        "owner": "root",
+        "group": "root"
+    },
+    "backgrounds": {
+        "dest": "/usr/share/backgrounds",
+        "owner": "gaetan",
+        "group": "root"
     },
     "xmobar": {
         "dest": "/home/gaetan/.config/xmobar",
-        "permission": "755"
+        "owner": "gaetan",
+        "group": "gaetan"
     },
     "alacritty": {
         "dest": "/home/gaetan/.config/alacritty",
-        "permission": "755"
+        "owner": "gaetan",
+        "group": "gaetan"
     },
     ".xinitrc": {
         "dest": "/home/gaetan/.xinitrc",
-        "permission": "755"
+        "owner": "gaetan",
+        "group": "gaetan"
     },
     ".xmonad": {
         "dest": "/home/gaetan/.xmonad",
-        "permission": "755"
+        "owner": "gaetan",
+        "group": "gaetan"
     },
     ".face": {
         "dest": "/home/gaetan/.face",
-        "permission": "644"
+        "owner": "gaetan",
+        "group": "gaetan"
     },
     ".bash_profile": {
         "dest": "/home/gaetan/.bash_profile",
-        "permission": "755"
+        "owner": "gaetan",
+        "group": "gaetan"
     },
     ".bashrc": {
         "dest": "/home/gaetan/.bashrc",
-        "permission": "755"
+        "owner": "gaetan",
+        "group": "gaetan"
     },
     ".zshrc": {
         "dest": "/home/gaetan/.zshrc",
-        "permission": "755"
+        "owner": "gaetan",
+        "group": "gaetan"
     },
     ".gitconfig": {
         "dest": "/home/gaetan/.gitconfig",
-        "permission": "755"
+        "owner": "gaetan",
+        "group": "gaetan"
     },
     ".p10k.zsh": {
         "dest": "/home/gaetan/.p10k.zsh",
-        "permission": "755"
+        "owner": "gaetan",
+        "group": "gaetan"
     },
     ".zsh_history": {
         "dest": "/home/gaetan/.zsh_history",
-        "permission": "755"
+        "owner": "gaetan",
+        "group": "gaetan"
+    },
+    ".fehbg": {
+        "dest": "/home/gaetan/.fehbg",
+        "owner": "gaetan",
+        "group": "gaetan"
     }
 }

@@ -8,6 +8,7 @@
   },
 
   "packages": [
+    "nvidia",
     "nano",
     "neofetch",
     "xorg-server", 
@@ -18,6 +19,7 @@
     "xmobar",
     "picom",
     "alacritty",
+    "xrandr",
     "feh",
     "lightdm-webkit2-theme-glorious",
     "visual-studio-code-bin",
@@ -56,12 +58,12 @@
     "/etc/pacman.conf",
     "/etc/locale.conf",
     "/etc/hostname",
-    "/etc/suoders",
     "/etc/lightdm/lightdm.conf",
     "/etc/lightdm/lightdm-webkit2-greeter.conf",
-    "/usr/share/backgrounds",
     "/etc/default/grub",
     "/etc/pulse/daemon.conf",
+    "/etc/modprobe.d/nouveau.conf",
+    "/usr/share/backgrounds",
     "$HOME/.config/xmobar",
     "$HOME/.config/alacritty",
     "$HOME/.xinitrc",
@@ -72,16 +74,12 @@
     "$HOME/.zshrc",
     "$HOME/.gitconfig",
     "$HOME/.p10k.zsh",
-    "$HOME/.zsh_history"
+    "$HOME/.zsh_history",
+    "$HOME/.fehbg"
   ],
 
   "commands": [
-    "timedatectl set-local-rtc 1 --adjust-system-clock",
-    "ln -sf /usr/share/zoneinfo/Europe/Paris /etc/localtime",
-    "hwclock --systohc",
-    "locale-gen",
-    "systemctl enable lightdm",
-    "grub-mkconfig -o /boot/grub/grub.cfg"
+
   ],
 
   "chroot": [
@@ -89,10 +87,10 @@
     "useradd -G wheel -m gaetan",
     "passwd gaetan",
     "passwd",
-    "cp dotfiles/sudoers /etc/sudoers",
     "netctl enable custom-dhcp-profile",
     "systemctl enable dhcpcd.service",
     "grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB",
-    "grub-mkconfig -o /boot/grub/grub.cfg"
+    "grub-mkconfig -o /boot/grub/grub.cfg",
+    "echo CHANGE SUDOER FILE TO MAKE WHEEL GROUP SUDO!!!"
   ]
 }
