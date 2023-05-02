@@ -8,6 +8,7 @@
   },
 
   "packages": [
+    "nvidia",
     "neofetch",
     "xorg-server", 
     "xorg-xinit",
@@ -81,7 +82,8 @@
     "hwclock --systohc",
     "locale-gen",
     "systemctl enable lightdm",
-    "grub-mkconfig -o /boot/grub/grub.cfg"
+    "grub-mkconfig -o /boot/grub/grub.cfg",
+    "mkinitcpio -p linux"
   ],
 
   "chroot": [
