@@ -4,6 +4,11 @@
         "owner": "root",
         "group": "root"
     },
+    "pacman.conf": {
+        "dest": "/etc/pacman.conf",
+        "owner": "root",
+        "group": "root"
+    },
     "locale.conf": {
         "dest": "/etc/locale.conf",
         "owner": "root",
@@ -19,8 +24,18 @@
         "owner": "gaetan",
         "group": "root"
     },
+    "config.py": {
+        "dest": "/home/gaetan/.config/qtile/config.py",
+        "owner": "gaetan",
+        "group": "gaetan"
+    },
     "alacritty": {
         "dest": "/home/gaetan/.config/alacritty",
+        "owner": "gaetan",
+        "group": "gaetan"
+    },
+    ".xinitrc": {
+        "dest": "/home/gaetan/.xinitrc",
         "owner": "gaetan",
         "group": "gaetan"
     },
