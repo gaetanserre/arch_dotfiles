@@ -8,7 +8,6 @@
   },
 
   "packages": [
-    "xorg-xrandr",
     "neofetch",
     "xorg-server", 
     "xorg-xinit",
@@ -85,7 +84,7 @@
 
   "chroot": [
     "pacman -Syyu --noconfirm --needed base-devel sudo grub efibootmgr os-prober netctl dhcpcd wpa_supplicant ifplugd nano",
-    "useradd -G wheel -m gaetan",
+    "sd",
     "passwd gaetan",
     "passwd",
     "systemctl enable dhcpcd.service",
