@@ -13,7 +13,7 @@ swapon boot
 # mount
 mount rest /mnt
 mount efi /mnt/boot --mkdir
-pacstrap -K ara/mnt base base-devel linux linux-firmware archlinuxarm-keyring
+pacstrap -K ara/mnt base base-devel linux linux-firmware
 genfstab -U /mnt >> /mnt/etc/fstab
 arch-chroot /mnt
 ```
