@@ -4,18 +4,8 @@
         "owner": "root",
         "group": "root"
     },
-    "pacman.conf": {
-        "dest": "/etc/pacman.conf",
-        "owner": "root",
-        "group": "root"
-    },
     "locale.conf": {
         "dest": "/etc/locale.conf",
-        "owner": "root",
-        "group": "root"
-    },
-    "hostname": {
-        "dest": "/etc/hostname",
         "owner": "root",
         "group": "root"
     },
@@ -31,11 +21,6 @@
     },
     "daemon.conf": {
         "dest": "/etc/pulse/daemon.conf",
-        "owner": "root",
-        "group": "root"
-    },
-    "nouveau.conf": {
-        "dest": "/etc/modprobe.d/nouveau.conf",
         "owner": "root",
         "group": "root"
     },
