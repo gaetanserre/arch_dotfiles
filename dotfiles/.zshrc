@@ -1,5 +1,5 @@
 neofetch
-setxkbmap -layout us -variant intl
+setxkbmap -layout fr -variant mac
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
