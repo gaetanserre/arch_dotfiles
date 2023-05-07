@@ -8,7 +8,6 @@
   },
 
   "packages": [
-    "nvidia",
     "xorg-xrandr",
     "neofetch",
     "xorg-server", 
@@ -59,7 +58,6 @@
     "/etc/hostname",
     "/etc/lightdm/lightdm.conf",
     "/etc/lightdm/lightdm-webkit2-greeter.conf",
-    "/etc/default/grub",
     "/etc/pulse/daemon.conf",
     "/etc/modprobe.d/nouveau.conf",
     "/usr/share/backgrounds",
@@ -83,8 +81,7 @@
     "hwclock --systohc",
     "locale-gen",
     "systemctl enable lightdm",
-    "grub-mkconfig -o /boot/grub/grub.cfg",
-    "mkinitcpio -p linux"
+    "grub-mkconfig -o /boot/grub/grub.cfg"
   ],
 
   "chroot": [
