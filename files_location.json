@@ -9,16 +9,6 @@
         "owner": "root",
         "group": "root"
     },
-    "lightdm.conf": {
-        "dest": "/etc/lightdm/lightdm.conf",
-        "owner": "root",
-        "group": "root"
-    },
-    "lightdm-webkit2-greeter.conf": {
-        "dest": "/etc/lightdm/lightdm-webkit2-greeter.conf",
-        "owner": "root",
-        "group": "root"
-    },
     "daemon.conf": {
         "dest": "/etc/pulse/daemon.conf",
         "owner": "root",
