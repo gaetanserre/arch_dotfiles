@@ -20,6 +20,7 @@
     "picom",
     "alacritty",
     "feh",
+    "lightdm",
     "lightdm-webkit2-theme-glorious",
     "visual-studio-code-bin",
     "nautilus",
