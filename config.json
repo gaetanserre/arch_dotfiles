@@ -80,8 +80,7 @@
     "ln -sf /usr/share/zoneinfo/Europe/Paris /etc/localtime",
     "hwclock --systohc",
     "locale-gen",
-    "systemctl enable lightdm",
-    "grub-mkconfig -o /boot/grub/grub.cfg"
+    "systemctl enable lightdm"
   ],
 
   "chroot": [
