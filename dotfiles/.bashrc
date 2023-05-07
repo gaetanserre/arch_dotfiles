@@ -10,4 +10,4 @@ alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
 neofetch
-setxkbmap -layout fr -variant mac
+setxkbmap -layout fr
