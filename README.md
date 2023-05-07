@@ -4,7 +4,7 @@
 ### Commands
 ```bash
 # Create a new partition table
-fdisk /dev/vda # 512M efi (uefi), 512M boot (swap), rest Linux
+fdisk /dev/vda # 512M efi (uefi), 512M swap (swap), rest Linux
 mkfs.ext4 rest
 mkfs.fat -F32 efi
 mkswap boot
