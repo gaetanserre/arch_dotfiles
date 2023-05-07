@@ -44,7 +44,7 @@
     "git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k",
     "pulseaudio -D",
     "mkdir -p ~/miniconda3",
-    "curl \"https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh\" -o ~/miniconda3/miniconda.sh",
+    "curl \"https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh\" -o ~/miniconda3/miniconda.sh",
     "bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3",
     "rm -rf ~/miniconda3/miniconda.sh",
     "~/miniconda3/bin/conda init zsh"
@@ -84,7 +84,7 @@
 
   "chroot": [
     "pacman -Syyu --noconfirm --needed base-devel sudo grub efibootmgr os-prober netctl dhcpcd wpa_supplicant ifplugd nano",
-    "sd",
+    "useradd -G wheel -m gaetan",
     "passwd gaetan",
     "passwd",
     "systemctl enable dhcpcd.service",
