@@ -13,7 +13,6 @@
     "xorg-xinit",
     "alacritty",
     "feh",
-    "lightdm-webkit2-theme-glorious",
     "visual-studio-code-bin",
     "nautilus",
     "apple-fonts",
@@ -49,8 +48,6 @@
     "/etc/locale.gen",
     "/etc/pacman.conf",
     "/etc/locale.conf",
-    "/etc/lightdm/lightdm.conf",
-    "/etc/lightdm/lightdm-webkit2-greeter.conf",
     "/etc/pulse/daemon.conf",
     "/usr/share/backgrounds",
     "$HOME/.config/alacritty",
@@ -69,8 +66,7 @@
     "timedatectl set-local-rtc 1 --adjust-system-clock",
     "ln -sf /usr/share/zoneinfo/Europe/Paris /etc/localtime",
     "hwclock --systohc",
-    "locale-gen",
-    "systemctl enable lightdm"
+    "locale-gen"
   ],
 
   "chroot": [
