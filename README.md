@@ -4,7 +4,7 @@
 ### Commands
 ```bash
 # Create a new partition table
-fdisk /dev/sda # 512M efi (uefi), 512M boot (swap), rest Linux
+fdisk /dev/vda # 512M efi (uefi), 512M boot (swap), rest Linux
 mkfs.ext4 rest
 mkfs.fat -F32 efi
 mkswap boot
@@ -13,7 +13,7 @@ swapon boot
 # mount
 mount rest /mnt
 mount efi /mnt/boot --mkdir
-pacstrap -K ara/mnt base base-devel linux linux-firmware
+pacstrap -K ara/mnt base base-devel linux linux-firmware archlinuxarm-keyring
 genfstab -U /mnt >> /mnt/etc/fstab
 arch-chroot /mnt
 ```

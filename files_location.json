@@ -29,23 +29,8 @@
         "owner": "gaetan",
         "group": "root"
     },
-    "xmobar": {
-        "dest": "/home/gaetan/.config/xmobar",
-        "owner": "gaetan",
-        "group": "gaetan"
-    },
     "alacritty": {
         "dest": "/home/gaetan/.config/alacritty",
-        "owner": "gaetan",
-        "group": "gaetan"
-    },
-    ".xinitrc": {
-        "dest": "/home/gaetan/.xinitrc",
-        "owner": "gaetan",
-        "group": "gaetan"
-    },
-    ".xmonad": {
-        "dest": "/home/gaetan/.xmonad",
         "owner": "gaetan",
         "group": "gaetan"
     },
