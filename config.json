@@ -9,6 +9,7 @@
 
   "packages": [
     "qtile",
+    "xorg-xrandr",
     "lightdm",
     "lightdm-webkit2-greeter",
     "lightdm-webkit2-theme-glorious",
@@ -65,7 +66,8 @@
     "$HOME/.gitconfig",
     "$HOME/.p10k.zsh",
     "$HOME/.zsh_history",
-    "$HOME/.fehbg"
+    "$HOME/.fehbg",
+    "$HOME/.autostart.sh"
   ],
 
   "commands": [

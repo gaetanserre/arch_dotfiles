@@ -78,5 +78,10 @@
         "dest": "/home/gaetan/.fehbg",
         "owner": "gaetan",
         "group": "gaetan"
+    },
+    ".autostart.sh": {
+        "dest": "/home/gaetan/.autostart.sh",
+        "owner": "gaetan",
+        "group": "gaetan"
     }
 }
