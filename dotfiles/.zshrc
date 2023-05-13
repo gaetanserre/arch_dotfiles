@@ -129,7 +129,7 @@ alias ca="conda activate"
 alias tc="typo_checker"
 alias aes="$HOME/miniconda3/envs/AES/bin/python $HOME/Documents/Projects/AES_256-Python/src/AES.py"
 alias nvi="nvitop -m full"
-alias sn="shutdown now"
+alias po="poweroff"
 
 export PATH=/home/gaetan/.local/bin:$PATH
 
