@@ -9,6 +9,7 @@
 
   "packages": [
     "qtile",
+    "picom",
     "xorg-xrandr",
     "lightdm",
     "lightdm-webkit2-greeter",
@@ -56,7 +57,7 @@
     "/etc/pacman.conf",
     "/etc/locale.conf",
     "/etc/pulse/daemon.conf",
-    "/usr/share/backgrounds",
+    "/usr/share/backgrounds/lightdm_backgrounds",
     "$HOME/.config/qtile/config.py",
     "$HOME/.config/alacritty",
     "$HOME/.xinitrc",
