@@ -44,13 +44,8 @@
         "owner": "root",
         "group": "root"
     },
-    "backgrounds": {
-        "dest": "/usr/share/backgrounds",
-        "owner": "gaetan",
-        "group": "root"
-    },
-    "xmobar": {
-        "dest": "/home/gaetan/.config/xmobar",
+    "lightdm_backgrounds": {
+        "dest": "/usr/share/backgrounds/lightdm_backgrounds",
         "owner": "gaetan",
         "group": "gaetan"
     },
@@ -64,8 +59,8 @@
         "owner": "gaetan",
         "group": "gaetan"
     },
-    ".xmonad": {
-        "dest": "/home/gaetan/.xmonad",
+    "config.py": {
+        "dest": "/home/gaetan/.config/qtile/config.py",
         "owner": "gaetan",
         "group": "gaetan"
     },
