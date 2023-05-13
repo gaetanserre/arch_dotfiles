@@ -172,7 +172,7 @@ screens = [
                 # NB Systray is incompatible with Wayland, consider using StatusNotifier instead
                 # widget.StatusNotifier(),
                 widget.CPUGraph(),
-                widget.Memory(fmt="RAM {}", measure_mem="G"),
+                widget.Memory(measure_mem="G"),
                 widget.Systray(),
                 widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
                 widget.QuickExit(),
