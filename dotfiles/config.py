@@ -44,14 +44,23 @@ keys = [
     Key([mod], "space", lazy.layout.next(), desc="Move window focus to other window"),
     # Move windows between left/right columns or move up/down in current stack.
     # Moving out of range in Columns layout will create new column.
-    Key([mod, "shift"], "h", lazy.layout.shuffle_left(), desc="Move window to the left"),
-    Key([mod, "shift"], "l", lazy.layout.shuffle_right(), desc="Move window to the right"),
+    Key(
+        [mod, "shift"], "h", lazy.layout.shuffle_left(), desc="Move window to the left"
+    ),
+    Key(
+        [mod, "shift"],
+        "l",
+        lazy.layout.shuffle_right(),
+        desc="Move window to the right",
+    ),
     Key([mod, "shift"], "j", lazy.layout.shuffle_down(), desc="Move window down"),
     Key([mod, "shift"], "k", lazy.layout.shuffle_up(), desc="Move window up"),
     # Grow windows. If current window is on the edge of screen and direction
     # will be to screen edge - window would shrink.
     Key([mod, "control"], "h", lazy.layout.grow_left(), desc="Grow window to the left"),
-    Key([mod, "control"], "l", lazy.layout.grow_right(), desc="Grow window to the right"),
+    Key(
+        [mod, "control"], "l", lazy.layout.grow_right(), desc="Grow window to the right"
+    ),
     Key([mod, "control"], "j", lazy.layout.grow_down(), desc="Grow window down"),
     Key([mod, "control"], "k", lazy.layout.grow_up(), desc="Grow window up"),
     Key([mod], "n", lazy.layout.normalize(), desc="Reset all window sizes"),
@@ -75,8 +84,20 @@ keys = [
 ]
 
 group_labels = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
-group_names = ["ampersand", "eacute", "quotedbl", "apostrophe", "parenleft", "section", "egrave", "exclam", "ccedilla"]
-groups = [Group(name=group_names[i], label=group_labels[i]) for i in range(len(group_labels))]
+group_names = [
+    "ampersand",
+    "eacute",
+    "quotedbl",
+    "apostrophe",
+    "parenleft",
+    "section",
+    "egrave",
+    "exclam",
+    "ccedilla",
+]
+groups = [
+    Group(name=group_names[i], label=group_labels[i]) for i in range(len(group_labels))
+]
 
 for i in groups:
     keys.extend(
@@ -103,8 +124,13 @@ for i in groups:
     )
 
 layouts = [
-    layout.Columns(border_focus=accent_color, border_focus_stack=accent_color, border_width=1),
-    #layout.Max(),
+    layout.Columns(
+        border_focus=accent_color,
+        border_focus_stack=accent_color,
+        border_width=2,
+        margin=4,
+    ),
+    # layout.Max(),
     # Try more layouts by unleashing below layouts.
     # layout.Stack(num_stacks=2),
     # layout.Bsp(),
@@ -129,10 +155,9 @@ screens = [
     Screen(
         bottom=bar.Bar(
             [
-                #widget.CurrentLayout(),
+                # widget.CurrentLayout(),
                 widget.GroupBox(
-                  highlight_method="line",
-                  this_current_screen_border=accent_color
+                    highlight_method="line", this_current_screen_border=accent_color
                 ),
                 widget.Prompt(),
                 widget.WindowName(),
@@ -142,25 +167,39 @@ screens = [
                     },
                     name_transform=lambda name: name.upper(),
                 ),
-                #widget.TextBox("default config", name="default"),
-                #widget.TextBox("Press &lt;M-r&gt; to spawn", foreground="#d75f5f"),
+                # widget.TextBox("default config", name="default"),
+                # widget.TextBox("Press &lt;M-r&gt; to spawn", foreground="#d75f5f"),
                 # NB Systray is incompatible with Wayland, consider using StatusNotifier instead
                 # widget.StatusNotifier(),
+                widget.CPUGraph(),
+                widget.Memory(measure_mem="G"),
                 widget.Systray(),
                 widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
                 widget.QuickExit(),
             ],
             24,
             border_width=[1, 0, 0, 0],  # Draw top and bottom borders
-            border_color=["404040", "000000", accent_color, "000000"]  # Borders are magenta
+            border_color=[
+                "404040",
+                "000000",
+                accent_color,
+                "000000",
+            ],  # Borders are magenta
         ),
     ),
 ]
 
 # Drag floating layouts.
 mouse = [
-    Drag([mod], "Button1", lazy.window.set_position_floating(), start=lazy.window.get_position()),
-    Drag([mod], "Button3", lazy.window.set_size_floating(), start=lazy.window.get_size()),
+    Drag(
+        [mod],
+        "Button1",
+        lazy.window.set_position_floating(),
+        start=lazy.window.get_position(),
+    ),
+    Drag(
+        [mod], "Button3", lazy.window.set_size_floating(), start=lazy.window.get_size()
+    ),
     Click([mod], "Button2", lazy.window.bring_to_front()),
 ]
 
@@ -207,7 +246,12 @@ import subprocess
 
 from libqtile import hook
 
+
 @hook.subscribe.startup_once
 def autostart():
-    background = os.path.expanduser('~/.fehbg')
+    # transparency
+    subprocess.Popen(["picom"])
+
+    # backgound
+    background = os.path.expanduser("~/.fehbg")
     subprocess.Popen([background])
