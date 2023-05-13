@@ -174,7 +174,7 @@ screens = [
                 widget.CPUGraph(),
                 widget.Memory(measure_mem="G"),
                 widget.Systray(),
-                widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
+                widget.Clock(format="%d %b %H:%M"),
                 widget.QuickExit(),
             ],
             24,
