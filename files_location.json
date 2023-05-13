@@ -19,9 +19,9 @@
         "owner": "root",
         "group": "root"
     },
-    "backgrounds": {
-        "dest": "/usr/share/backgrounds",
-        "owner": "gaetan",
+    "lightdm_backgrounds": {
+        "dest": "/usr/share/backgrounds/lightdm_backgrounds",
+        "owner": "root",
         "group": "root"
     },
     "config.py": {

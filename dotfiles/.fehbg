@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --no-fehbg --bg-fill '/usr/share/backgrounds/gnome/field-d.svg' 
+feh --no-fehbg --bg-fill '/usr/share/backgrounds/lightdm_backgrounds/design-is-rounded-rectangles-l.webp' 
