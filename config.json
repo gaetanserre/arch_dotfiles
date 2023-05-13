@@ -13,10 +13,7 @@
     "neofetch",
     "xorg-server", 
     "xorg-xinit",
-    "xmonad",
-    "xmonad-contrib",
-    "xterm",
-    "xmobar",
+    "qtile",
     "picom",
     "alacritty",
     "feh",
@@ -39,7 +36,8 @@
     "pulsemixer",
     "dmenu",
     "zsh",
-    "bat"
+    "bat",
+    "gnome-keyring"
   ],
 
   "pkg_commands": [
@@ -65,11 +63,10 @@
     "/etc/default/grub",
     "/etc/pulse/daemon.conf",
     "/etc/modprobe.d/nouveau.conf",
-    "/usr/share/backgrounds",
-    "$HOME/.config/xmobar",
+    "/usr/share/backgrounds/lightdm_backgrounds",
     "$HOME/.config/alacritty",
     "$HOME/.xinitrc",
-    "$HOME/.xmonad",
+    "$HOME/.config/qtile/config.py",
     "$HOME/.face",
     "$HOME/.bash_profile",
     "$HOME/.bashrc",
