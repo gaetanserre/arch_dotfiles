@@ -1,0 +1,107 @@
+{
+    "locale.gen": {
+        "dest": "/etc/locale.gen",
+        "owner": "root",
+        "group": "root"
+    },
+    "pacman.conf": {
+        "dest": "/etc/pacman.conf",
+        "owner": "root",
+        "group": "root"
+    },
+    "locale.conf": {
+        "dest": "/etc/locale.conf",
+        "owner": "root",
+        "group": "root"
+    },
+    "hostname": {
+        "dest": "/etc/hostname",
+        "owner": "root",
+        "group": "root"
+    },
+    "lightdm.conf": {
+        "dest": "/etc/lightdm/lightdm.conf",
+        "owner": "root",
+        "group": "root"
+    },
+    "lightdm-webkit2-greeter.conf": {
+        "dest": "/etc/lightdm/lightdm-webkit2-greeter.conf",
+        "owner": "root",
+        "group": "root"
+    },
+    "grub": {
+        "dest": "/etc/default/grub",
+        "owner": "root",
+        "group": "root"
+    },
+    "daemon.conf": {
+        "dest": "/etc/pulse/daemon.conf",
+        "owner": "root",
+        "group": "root"
+    },
+    "nouveau.conf": {
+        "dest": "/etc/modprobe.d/nouveau.conf",
+        "owner": "root",
+        "group": "root"
+    },
+    "lightdm_backgrounds": {
+        "dest": "/usr/share/backgrounds/lightdm_backgrounds",
+        "owner": "gaetan",
+        "group": "gaetan"
+    },
+    "alacritty": {
+        "dest": "/home/gaetan/.config/alacritty",
+        "owner": "gaetan",
+        "group": "gaetan"
+    },
+    ".xinitrc": {
+        "dest": "/home/gaetan/.xinitrc",
+        "owner": "gaetan",
+        "group": "gaetan"
+    },
+    "config.py": {
+        "dest": "/home/gaetan/.config/qtile/config.py",
+        "owner": "gaetan",
+        "group": "gaetan"
+    },
+    ".face": {
+        "dest": "/home/gaetan/.face",
+        "owner": "gaetan",
+        "group": "gaetan"
+    },
+    ".bash_profile": {
+        "dest": "/home/gaetan/.bash_profile",
+        "owner": "gaetan",
+        "group": "gaetan"
+    },
+    ".bashrc": {
+        "dest": "/home/gaetan/.bashrc",
+        "owner": "gaetan",
+        "group": "gaetan"
+    },
+    ".zshrc": {
+        "dest": "/home/gaetan/.zshrc",
+        "owner": "gaetan",
+        "group": "gaetan"
+    },
+    ".gitconfig": {
+        "dest": "/home/gaetan/.gitconfig",
+        "owner": "gaetan",
+        "group": "gaetan"
+    },
+    ".p10k.zsh": {
+        "dest": "/home/gaetan/.p10k.zsh",
+        "owner": "gaetan",
+        "group": "gaetan"
+    },
+    ".zsh_history": {
+        "dest": "/home/gaetan/.zsh_history",
+        "owner": "gaetan",
+        "group": "gaetan"
+    },
+    ".fehbg": {
+        "dest": "/home/gaetan/.fehbg",
+        "owner": "gaetan",
+        "group": "gaetan"
+    }
+}
