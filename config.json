@@ -79,6 +79,9 @@
   ],
 
   "commands": [
+    "git clone https://github.com/gaetanserre/lightdm-webkit2-theme-glorious",
+    "cp -r lightdm-webkit2-theme-glorious/* /usr/share/lightdm-webkit/themes/glorious/",
+    "rm -rf lightdm-webkit2-theme-glorious",
     "timedatectl set-local-rtc 1 --adjust-system-clock",
     "ln -sf /usr/share/zoneinfo/Europe/Paris /etc/localtime",
     "hwclock --systohc",
