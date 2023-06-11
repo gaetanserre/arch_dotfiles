@@ -175,7 +175,6 @@ screens = [
                 widget.Memory(measure_mem="G"),
                 widget.Systray(),
                 widget.Clock(format="%d %b %H:%M"),
-                widget.QuickExit(),
             ],
             24,
             border_width=[1, 0, 0, 0],  # Draw top and bottom borders
