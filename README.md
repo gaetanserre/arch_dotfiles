@@ -9,7 +9,7 @@ swapon swap
 # mount
 mount rest /mnt
 mount efi_win /mnt/efi --mkdir
-pacstrap -K ara/mnt base base-devel linux linux-firmware
+pacstrap -K /mnt base base-devel linux linux-firmware
 genfstab -U /mnt >> /mnt/etc/fstab
 arch-chroot /mnt
 ```
